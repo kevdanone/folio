@@ -3,6 +3,8 @@ module.exports = {
     title: `My folio`,
     description: `Hi, i'm Kevin Lauro`,
     subDescription:`Frontend Developer / Programming lover`,
+    aboutTitle: `About Me`,
+    folioTitle: `My projects`,
     aboutMe: `Programming lover with a preference for javascript,
     I've started my journey with a programming graduation.
     Then I began to start web and especially frontend.
@@ -12,7 +14,24 @@ module.exports = {
     aboutMe3:`Now I do my best to learn deeply React and other frontend technologies.`,
     author: `@kevin`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+
+    folioProject:[
+      {
+        img:'',
+        name:'',
+        url:''
+      },
+      {
+        img:'',
+        name:'',
+        url:''
+      },
+    ],
+
   },
+
+  
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,

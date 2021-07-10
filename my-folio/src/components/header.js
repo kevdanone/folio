@@ -10,16 +10,17 @@ const Hero = styled.header`
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   
 `
-const Overlay = styled.div`
-position: absolute;
-height: 95vh;
-top: 0;
-right: 0;
-left: 0;
-z-index: 1;
-background-color: #2e3141;
-opacity:.7;
+export const Overlay = styled.div`
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #2e3141;
+  opacity:.7;
 `
+
 const Title = styled.div`
   color : white;
   display: flex;
@@ -43,7 +44,7 @@ const H1 = styled.h1`
 `
 const Subtitle = styled.p`
   text-align:left;
-  font-size:1.5em;
+  font-size:1.7em;
   font-weight:300;
   text-transform:uppercase;
   letter-spacing:0.1em;

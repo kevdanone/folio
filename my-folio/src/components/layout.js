@@ -4,6 +4,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import {createGlobalStyle, styled } from "styled-components"
 import Header from "./header"
+import Folio from "./folio"
+import Footer from "./footer"
 import {Normalize} from "styled-normalize"
 //import "./layout.css"
 
@@ -25,7 +27,7 @@ const Layout = ({ children }) => {
           title
           description
           subDescription
-          aboutMe
+          folioTitle
         }
       }
     }
@@ -37,11 +39,10 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Header data={data.site.siteMetadata} />
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+      <Folio data={data.site.siteMetadata}/>
+      <Footer />
+        
+     
       
     </>
   )
