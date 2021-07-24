@@ -11,12 +11,20 @@ const About = styled.div`
     text-align: right;
     margin: 0 6%;
     color: white;
+    @media (max-width: 1023px) {
+    width:70%;
+  }
 `
 const Section = styled.section`
   display:flex;
   justify-content:center;
+  @media (max-width: 1023px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom:1em;
+  }
 `
-const H2= styled.h2`
+export const H2= styled.h2`
   font-size: 1.7em;
   text-transform: uppercase;
   border-bottom: 2px solid hsla(0,0%,100%,.125);
@@ -25,6 +33,21 @@ const H2= styled.h2`
 const Text= styled.p`
   font-size: 1.2em;
   color: hsla(0,0%,100%,.9);
+`
+const Button = styled.a`
+ border: 2px solid hsla(0,0%,100%,.125);
+ text-decoration:none;
+ margin-top:1.5em;
+ padding:.5em;
+ font-size:1.3em;
+ color:white;
+ border-radius:5%;
+ font-weight: 700;
+ text-transform:uppercase;
+ transition: 0.5s;
+ &:hover {
+    background-color:#2e3141;
+  }
 `
 
 const IndexPage = ({data}) => (
@@ -36,6 +59,7 @@ const IndexPage = ({data}) => (
     <Text>{data.site.siteMetadata.aboutMe}</Text>
     <Text>{data.site.siteMetadata.aboutMe2}</Text>
     <Text>{data.site.siteMetadata.aboutMe3}</Text>
+    <Button href="/">Resume</Button>
     </About>
     <StaticImage
       src="../images/kevinFolio.png"
@@ -44,7 +68,7 @@ const IndexPage = ({data}) => (
       //quality={95}
       formats={["AUTO", "WEBP", "AVIF"]}
       alt="kevin photo"
-      style={{ marginBottom: `1.45rem` },{ borderRadius: `50%` }}
+      style={{ marginBottom: `1.45rem` ,borderRadius: `50%` }}
     />
     </Section>
     {/* <p>

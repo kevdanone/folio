@@ -13,20 +13,10 @@ module.exports = {
     I learned nodeJs and PostgreSQL.`,
     aboutMe3:`Now I do my best to learn deeply React and other frontend technologies.`,
     author: `@kevin`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
-
-    folioProject:[
-      {
-        img:'',
-        name:'',
-        url:''
-      },
-      {
-        img:'',
-        name:'',
-        url:''
-      },
-    ],
+    mail: `mailto:kevin.lauro@yahoo.com`,
+    twitter: `https://twitter.com/kevdanone`,
+    linkedin: `https://www.linkedin.com/in/k%C3%A9vin-lauro-06b5a7122/`,
+    github:`https://github.com/kevdanone`,
 
   },
 

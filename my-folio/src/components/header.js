@@ -1,6 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import styled from "styled-components"
+import styled, {keyframes} from "styled-components"
 import bgimg from "../images/bg.jpg"
 
 const Hero = styled.header`
@@ -8,7 +8,12 @@ const Hero = styled.header`
   background: url(${bgimg}) fixed center no-repeat;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-  
+  display:flex;
+  justify-content:center;
+  @media (max-width: 1023px) {
+    margin-bottom:1em;
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  }
 `
 export const Overlay = styled.div`
   position: absolute;
@@ -29,10 +34,32 @@ const Title = styled.div`
   position: relative;
   z-index:2;
   height:100%;
-  margin: 0 20%;
+  width: 70%;
   justify-content:center;
   
 `
+
+const fadeinLeft = keyframes`
+ from {
+        opacity:0;
+        transform: translatex(-50px);
+    }
+    to {
+        opacity:1;
+        transform: translatex(0);
+    }
+`
+const fadeinBot = keyframes`
+ from {
+        opacity:0;
+        transform: translatey(50px);
+    }
+    to {
+        opacity:1;
+        transform: translatey(0);
+    }
+`
+
 const H1 = styled.h1`
   font-size: 3em;
   text-align: left;
@@ -41,7 +68,9 @@ const H1 = styled.h1`
   text-transform:uppercase;
   border-bottom: 2px solid hsla(0,0%,100%,.125);
   letter-spacing:0.1em;
+  animation: 1s both 0.5s ${fadeinLeft} ;
 `
+
 const Subtitle = styled.p`
   text-align:left;
   font-size:1.7em;
@@ -50,6 +79,7 @@ const Subtitle = styled.p`
   letter-spacing:0.1em;
   color:hsla(0,0%,100%,.6);
   margin-top: 0;
+  animation: 1s both 0.5s ${fadeinBot} ;
 `
 
 const Header = ({ data }) => (

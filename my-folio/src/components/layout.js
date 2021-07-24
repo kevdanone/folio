@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
   body{
     font-family: 'Raleway', sans-serif;
-    background-color:#4c5c96;
+    background-color:#3f4e85;
   }
   
 `
@@ -28,6 +28,11 @@ const Layout = ({ children }) => {
           description
           subDescription
           folioTitle
+          mail
+          twitter
+          linkedin
+          github
+
         }
       }
     }
@@ -40,7 +45,7 @@ const Layout = ({ children }) => {
       <Header data={data.site.siteMetadata} />
       <main>{children}</main>
       <Folio data={data.site.siteMetadata}/>
-      <Footer />
+      <Footer data={data.site.siteMetadata} />
         
      
       
