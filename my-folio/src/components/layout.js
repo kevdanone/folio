@@ -7,7 +7,7 @@ import Header from "./header"
 import Folio from "./folio"
 import Footer from "./footer"
 import {Normalize} from "styled-normalize"
-//import "./layout.css"
+
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');

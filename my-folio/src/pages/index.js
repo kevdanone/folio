@@ -65,16 +65,11 @@ const IndexPage = ({data}) => (
       src="../images/kevinFolio.png"
       width={300}
       layout= "constrained"
-      //quality={95}
       formats={["AUTO", "WEBP", "AVIF"]}
       alt="kevin photo"
       style={{ marginBottom: `1.45rem` ,borderRadius: `50%` }}
     />
     </Section>
-    {/* <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p> */}
   </Layout>
 )
 
