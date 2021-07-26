@@ -17,13 +17,17 @@ const Hero = styled.header`
 `
 export const Overlay = styled.div`
   position: absolute;
-  height: 100%;
+  height: 95vh;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   top: 0;
   right: 0;
   left: 0;
   z-index: 1;
   background-color: #2e3141;
   opacity:.7;
+  @media (max-width: 1023px) {
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  }
 `
 
 const Title = styled.div`

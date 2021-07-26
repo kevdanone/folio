@@ -111,8 +111,8 @@ const Folio = ({ data }) => (
                 style={{ borderRadius: `2% 2% 0 0` }}
               />
             </a>
-            <H3>Pixel Art</H3>
-            <Description>Little project for learn how to use a real API and work with his data. </Description> 
+            <H3>API GitHub</H3>
+            <Description>Little project to learn how to use a real API and work with his data. </Description> 
             <Button href="https://github.com/kevdanone/API-GitHub"> repos </Button>
           
           </Card>
@@ -129,7 +129,7 @@ const Folio = ({ data }) => (
               />
             </a>
             <H3>Pixel Art</H3>
-            <Description>a little game for improve my DOM manipulation skill. </Description> 
+            <Description>a little game to improve my DOM manipulation skill. </Description> 
             <Button href="https://github.com/kevdanone/pixelart"> repos </Button>
           
           </Card>
@@ -146,8 +146,8 @@ const Folio = ({ data }) => (
                 style={{ borderRadius: `2% 2% 0 0` }}
               />
             </a>
-            <H3>Pixel Art</H3>
-            <Description>a little card game in Js for training my skill. </Description> 
+            <H3>Acey Deucey</H3>
+            <Description>a little card game in Js to training my skill. </Description> 
             <Button href="https://github.com/kevdanone/Acey-Deucey"> repos </Button>
           
           </Card>
