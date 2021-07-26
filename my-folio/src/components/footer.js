@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import bgimg from "../images/bg.jpg"
-import {Overlay} from "./header"
+//import {Overlay} from "./header"
 import {H2} from "../pages/index"
 import { IconContext } from "react-icons";
 import { FaLinkedin , FaTwitter, FaGithub, FaEnvelope } from 'react-icons/fa'
@@ -11,7 +11,7 @@ const Foot = styled.footer`
     display:flex;
     justify-content:center;
     position:relative;
-    height: 60vh;
+    height: 100%;
     margin-top: -5em;
     background: url(${bgimg}) fixed center no-repeat;
     background-size: cover;
@@ -43,7 +43,16 @@ const CreateBy= styled.p`
     padding-top:2em;
     color:hsla(0,0%,100%,.5);
 `
-
+const Overlay = styled.div`
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #2e3141;
+  opacity:.7;
+`
 const Footer = ({data}) => (
 
     <Foot>
