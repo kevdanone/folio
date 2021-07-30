@@ -11,7 +11,7 @@ module.exports = {
     Finally advanced frontend technology like React and Redux became my world.`,
     aboutMe2:`To develop my frontend and backend communication knowledge,
     I learned nodeJs and PostgreSQL.`,
-    aboutMe3:`Now I do my best to learn deeply React and other frontend technologies.`,
+    aboutMe3:`Today, I'm learning Deeply react and other frontend technologies to improve my skills in programing.`,
     author: `@kevin`,
     mail: `mailto:kevin.lauro@yahoo.com`,
     twitter: `https://twitter.com/kevdanone`,

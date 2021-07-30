@@ -58,7 +58,7 @@ const Footer = ({data}) => (
     <Foot>
         <FooterContent>
             <H2>Contact Me</H2>
-            <Text>to better know about me.</Text>
+            <Text>to know me better.</Text>
             <IconContext.Provider value={{ size: "3em"}}>
                 <Icons>
                     <A href={data.linkedin} target="_blank" ><FaLinkedin /></A>

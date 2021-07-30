@@ -58,7 +58,7 @@ const IndexPage = ({data}) => (
     <Text>{data.site.siteMetadata.aboutMe}</Text>
     <Text>{data.site.siteMetadata.aboutMe2}</Text>
     <Text>{data.site.siteMetadata.aboutMe3}</Text>
-    <Button href="https://drive.google.com/file/d/14LICTPbtqRy3dnqbczy3pC3uVIiYxcf1/view?usp=sharing" target="_blank" >Resume</Button>
+    <Button href="https://drive.google.com/file/d/1Uyiv0Xg4ZKogC1cCZoWfg0TTRudxA4Cj/view?usp=sharing" target="_blank" >Resume</Button>
     </About>
     <StaticImage
       src="../images/kevinFolio.png"
