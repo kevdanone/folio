@@ -28,6 +28,7 @@ export const H2= styled.h2`
   text-transform: uppercase;
   border-bottom: 2px solid hsla(0,0%,100%,.125);
   padding-bottom: .5em;
+  
 `
 const Text= styled.p`
   font-size: 1.2em;

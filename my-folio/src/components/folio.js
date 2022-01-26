@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
-import {H2} from "../pages/index"
+
 //import config from "../../config"
 
 const Projet = styled.section`
@@ -22,6 +22,16 @@ const Section = styled.section`
   width:70%;
 
 `
+const H2= styled.h2`
+  font-size: 1.7em;
+  text-transform: uppercase;
+  border-bottom: 2px solid hsla(0,0%,100%,.125);
+  padding-bottom: .5em;
+  @media (max-width: 1023px){
+    padding-top:1em;
+  }
+`
+
 const AllProject= styled.div`
   display:flex;
   justify-content:space-around;

@@ -37,6 +37,7 @@ const Icons = styled.div`
 `
 const A = styled.a`
     color: white;
+    padding:0 1em
 `
 const CreateBy= styled.p`
     text-align:center;
